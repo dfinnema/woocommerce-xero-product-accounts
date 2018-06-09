@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Xero Stripe Fees\n"
+"POT-Creation-Date: 2018-06-09 14:39+1200\n"
+"PO-Revision-Date: 2018-06-09 14:41+1200\n"
+"Last-Translator: Dennis Finnema <dennis@itchef.nz>\n"
+"Language-Team: Dennis Finnema <dennis@itchef.nz>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: woocommerce-xero-product-accounts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-woocommerce-xero-product-accounts-admin.php:75
+msgid ""
+"Sending payments to Xero does not work with this plugin enabled. Please turn "
+"off this option to avoid getting errors"
+msgstr ""
+"Betalingen sturen naar Xero werkt niet met deze plugin ingeschakeld. Gelieve "
+"deze optie uitschakelen om te voorkomen dat je fout meldingen ziet"
+
+#: admin/class-woocommerce-xero-product-accounts-admin.php:149
+msgid "Xero Account Code"
+msgstr "Xero Rekeningcode"
+
+#: admin/class-woocommerce-xero-product-accounts-admin.php:150
+msgid ""
+"Sets the account code in Xero when sending the invoice, leave blank to use "
+"the default"
+msgstr ""
+"Stelt de accountcode in bij Xero voor het verzenden van de factuur, laat "
+"leeg om de standaardcode te gebruiken"
+
+#: includes/class-woocommerce-xero-product-accounts-activator.php:40
+msgid ""
+"<a href=\"https://woocommerce.com/products/xero/\">WooCommerce Xero "
+"Integration</a> is required to be installed and activated!"
+msgstr ""
+"<a href=\"https://woocommerce.com/products/xero/\">WooCommerce Xero "
+"Integration</a> is vereist!"
+
+#: includes/class-woocommerce-xero-product-accounts-activator.php:49
+msgid ""
+"<a href=\"https://github.com/dfinnema/woocommerce-xero-stripe-fees"
+"\">WooCommerce Xero Stripe Fees</a> is required to be installed and "
+"activated!"
+msgstr ""
+"<a href=\"https://github.com/dfinnema/woocommerce-xero-stripe-fees"
+"\">WooCommerce Xero Stripe Kosten</a> dient te worden geïnstalleerd en "
+"geactiveerd!"
+
+#: plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:358
+msgid "Check for updates"
+msgstr "Controleren op updates"
+
+#: plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:405
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "De plugin %s is up to date."
+
+#: plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:407
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Een nieuwe versie van de plugin %s is beschikbaar."
+
+#: plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:409
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Onbekende update checker status \"%s\""
+
+#: plugin-update-checker/Puc/v4p1/Vcs/PluginUpdateChecker.php:83
+msgid "There is no changelog available."
+msgstr "Er is geen changelog beschikbaar."
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Xero Product Accounts"
+msgstr "WooCommerce Xero Producten Rekeningen"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/dfinnema/woocommerce-xero-product-accounts"
+msgstr "https://github.com/dfinnema/woocommerce-xero-product-accounts"
+
+#. Description of the plugin/theme
+msgid "Extends the WooCommerce Xero Extension with per product account codes"
+msgstr ""
+"Breidt de WooCommerce Xero Plugin met uitbreiding per producten rekening "
+"codes"
+
+#. Author of the plugin/theme
+msgid "IT Chef"
+msgstr "IT Chef"
+
+#. Author URI of the plugin/theme
+msgid "https://itchef.nz"
+msgstr "https://itchef.nz"
+
+#~ msgid "Stripe Fee Account"
+#~ msgstr "Stripe Kosten Rekening"
+
+#~ msgid "Stripe Country"
+#~ msgstr "Stripe Land"
+
+#~ msgid "Code for Xero account to track Stripe Fees paid."
+#~ msgstr ""
+#~ "Rekening Code voor Xero voor het bijhouden van Stripe Kosten betaald."
+
+#~ msgid "Select Stripe Country"
+#~ msgstr "Selecteer Stripe land"
+
+#~ msgid "Australia"
+#~ msgstr "Australië"
+
+#~ msgid "New Zealand"
+#~ msgstr "Nieuw-Zeeland"
+
+#~ msgid "United States of America"
+#~ msgstr "Verenigde Staten van Amerika"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "European Union"
+#~ msgstr "Europese Unie"
+
+#~ msgid "Ireland"
+#~ msgstr "Ierland"
+
+#~ msgid "Other (NO TAX Calculations)"
+#~ msgstr "Andere (GEEN belasting berekeningen)"
+
+#~ msgid "The country you have registered with Stripe."
+#~ msgstr "Het land dat u hebt geregistreerd met Stripe."
+
+#~ msgid "ERROR: No Stripe Fee found for order"
+#~ msgstr "FOUT: Kan geen Stripe kosten vinden voor order"
+
+#~ msgid "Stripe Fee"
+#~ msgstr "Stripe Kosten"
+
+#~ msgid "Stripe Fee (%s) added to Xero invoice"
+#~ msgstr "Stripe kosten (%s) toegevoegd aan Xero factuur"
