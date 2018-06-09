@@ -29,7 +29,6 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Plugin Updater
-/*
 require 'plugin-update-checker/plugin-update-checker.php';
 $dfc_puc = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/dfinnema/woocommerce-xero-product-accounts',
@@ -37,7 +36,7 @@ $dfc_puc = Puc_v4_Factory::buildUpdateChecker(
 	'woocommerce-xero-product-accounts'
 );
 $dfc_puc->setBranch('release');
-*/
+
 
 /**
  * The code that runs during plugin activation.
