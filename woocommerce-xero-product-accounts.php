@@ -9,7 +9,7 @@
  * Plugin Name:       WooCommerce Xero Product Accounts
  * Plugin URI:        https://github.com/dfinnema/woocommerce-xero-product-accounts
  * Description:       Extends the WooCommerce Xero Extension with per product account codes
- * Version:           1.0
+ * Version:           1.1
  * Author:            IT Chef
  * Author URI:        https://itchef.nz
  * Tested up to:      4.9.4
