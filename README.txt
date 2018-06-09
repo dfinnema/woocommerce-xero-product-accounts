@@ -44,5 +44,9 @@ Please head over to https://github.com/dfinnema/woocommerce-xero-product-account
 
 == Changelog ==
 
+= 1.1 =
+* FIX now picks up more product types
+* TWEAK further integration with other plugins
+
 = 1.0 =
 * Initial Release

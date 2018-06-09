@@ -90,18 +90,33 @@ class Woocommerce_Xero_Product_Accounts_Admin {
     public function xero_account_add ( $data ) {
 	    $this->log('PLUGIN START - '.$this->plugin_name.' ('.$this->version.')');
 
+	    // Get Order ID from Data
+	    $arr = explode('post.php?post=', $data['Invoice']['Url']);
+	    $order_id = $arr[1];
+	    $arr = explode('&', $order_id);
+	    $order_id = $arr[0];
+
+	    // None found?, lets abort
+	    if (empty($order_id)) {
+
+		    // DEBUG
+		    $this->log("Abort Stripe Product Accounts -> Unable to find order id" );
+
+		    return $data;
+	    }
 
 	    // Get Line Items
-	    $line_items = $data['Invoice']['LineItems'];
+	    $line_items = $data['Invoice']['LineItems']['LineItem'];
 	    $this->log('RAW LineItems Before');
 	    $this->log(print_r($line_items,1));
 
 	    $line_items_new = array();
 
+	    $added = 0;
+
 	    foreach ($line_items as $line) {
-	    	if (array_key_exists('LineItem',$line)) {
-	    		$product_name = $line['LineItem']['Description'];
-	    		$product_price_net = $line['LineItem']['UnitAmount'];
+	    		$product_name = $line['Description'];
+	    		$product_price_net = $line['UnitAmount'];
 
 			    $this->log('Loading Item ('.$product_name.')');
 
@@ -117,17 +132,29 @@ class Woocommerce_Xero_Product_Accounts_Admin {
 
 				    if ('' !== $product_xero_code) {
 					    $this->log(' + Found Custom Code, Applying');
-					    $line['LineItem']['AccountCode'] = $product_xero_code;
+					    $line['AccountCode'] = $product_xero_code;
+					    $added +=1;
 				    }
 			    }
-
-		    }
 
 		    $line_items_new[] = $line;
 	    }
 
 	    // Re-Merge the Data
-	    $data['Invoice']['LineItems'] = $line_items_new;
+	    $data['Invoice']['LineItems']['LineItem'] = $line_items_new;
+
+	    // Add a note to the order
+	    if (0 !== $added) {
+		    $this->add_order_note( $order_id,
+			    apply_filters( 'wc_xero_product_accounts_order_note',
+				    sprintf( esc_html__( 'Added custom account codes for %s products in the Xero invoice', 'woocommerce-xero-product-accounts' ),
+					    $added
+				    ) ) );
+
+		    $this->log('Added custom account codes for '.$added.' products in the Xero invoice');
+	    }
+
+
 
 	    $this->log('PLUGIN END - '.$this->plugin_name.' ('.$this->version.')');
 
@@ -177,7 +204,7 @@ class Woocommerce_Xero_Product_Accounts_Admin {
 	 */
     private function log($message='') {
         
-        Woocommerce_Xero_Product_Accounts::log($message);
+        Woocommerce_Xero_Stripe_Fees::log($message);
     }
     
     /**
