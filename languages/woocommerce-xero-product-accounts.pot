@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WooCommerce Xero Stripe Fees\n"
-"POT-Creation-Date: 2018-06-09 14:39+1200\n"
+"POT-Creation-Date: 2018-06-09 17:36+1200\n"
 "PO-Revision-Date: 2017-06-26 17:14+1200\n"
 "Last-Translator: Dennis Finnema <dennis@itchef.nz>\n"
 "Language-Team: Dennis Finnema <dennis@itchef.nz>\n"
@@ -27,11 +27,16 @@ msgid ""
 "off this option to avoid getting errors"
 msgstr ""
 
-#: admin/class-woocommerce-xero-product-accounts-admin.php:149
+#: admin/class-woocommerce-xero-product-accounts-admin.php:150
+#, php-format
+msgid "Added custom account codes for %s products in the Xero invoice"
+msgstr ""
+
+#: admin/class-woocommerce-xero-product-accounts-admin.php:176
 msgid "Xero Account Code"
 msgstr ""
 
-#: admin/class-woocommerce-xero-product-accounts-admin.php:150
+#: admin/class-woocommerce-xero-product-accounts-admin.php:177
 msgid ""
 "Sets the account code in Xero when sending the invoice, leave blank to use "
 "the default"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Xero Stripe Fees\n"
-"POT-Creation-Date: 2018-06-09 14:39+1200\n"
-"PO-Revision-Date: 2018-06-09 14:41+1200\n"
+"POT-Creation-Date: 2018-06-09 17:36+1200\n"
+"PO-Revision-Date: 2018-06-09 17:36+1200\n"
 "Last-Translator: Dennis Finnema <dennis@itchef.nz>\n"
 "Language-Team: Dennis Finnema <dennis@itchef.nz>\n"
 "Language: nl_NL\n"
@@ -29,11 +29,17 @@ msgstr ""
 "Betalingen sturen naar Xero werkt niet met deze plugin ingeschakeld. Gelieve "
 "deze optie uitschakelen om te voorkomen dat je fout meldingen ziet"
 
-#: admin/class-woocommerce-xero-product-accounts-admin.php:149
+#: admin/class-woocommerce-xero-product-accounts-admin.php:150
+#, php-format
+msgid "Added custom account codes for %s products in the Xero invoice"
+msgstr ""
+"Aangepaste account codes voor %s producten toegevoegd in de Xero factuur"
+
+#: admin/class-woocommerce-xero-product-accounts-admin.php:176
 msgid "Xero Account Code"
 msgstr "Xero Rekeningcode"
 
-#: admin/class-woocommerce-xero-product-accounts-admin.php:150
+#: admin/class-woocommerce-xero-product-accounts-admin.php:177
 msgid ""
 "Sets the account code in Xero when sending the invoice, leave blank to use "
 "the default"
